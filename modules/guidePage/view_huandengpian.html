@@ -1,0 +1,24 @@
+<ion-view>
+   <ion-content>
+   <style>
+     .box{
+      /*position: absolute;
+      width: 100%;*/
+      /*bottom:0;*/
+      height: 568px;
+     }
+   </style>
+     <!-- 幻灯片 -->
+      <ion-slide-box class="box" does-continue="true" auto-play="true" slide-interval="500" on-slide-changed="onSlideChange($index)">
+          <ion-slide>
+            <div class="box royal-bg">这是第一个</div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box assertive-bg">这是第二个</div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box energized-bg">这是肖平</div>
+          </ion-slide>
+      </ion-slide-box>
+   </ion-content>
+</ion-view>

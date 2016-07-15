@@ -1,0 +1,38 @@
+<ion-view>
+   <ion-content>
+    <!-- 点击显示modal模态框 -->
+    <button ng-click="showModal()" class="button button-balanced">点击显示modal模态框</button>
+   <!-- 点击按钮弹出ActionSheet -->
+   <button ng-click="showActionSheet()" class="button button-royal">点击按钮弹出ActionSheet</button>
+   <!-- 点击按钮弹出Popup -->
+    <button ng-click="showPopup()" class="button button-assertive">点击弹出Popub</button>
+  
+    <!-- 点击显示Popover弹出框 -->
+    <button ng-click="openPopover" class="button button-stable">点击显示Popover弹出框</button>
+
+      <!-- popover弹出框 -->
+       <script id="my-popover.html" type="text/ng-template">
+            <ion-popover-view>
+                <ion-header-bar>
+                    <h1 class="title">我是标题</h1>
+                </ion-header-bar>
+                <ion-content>
+                    这里的内容
+                </ion-content>
+            </ion-popover-view>
+        </script>
+
+     <!-- modal弹出框 -->
+     <script id="my-modal.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar>
+                    <h1 class="title">我是标题</h1>
+                </ion-header-bar>
+                <ion-content>
+                  哈哈哈
+                  <button ng-click="hideModal()" class="button button-positive">隐藏modal</button>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+   </ion-content>
+</ion-view>
